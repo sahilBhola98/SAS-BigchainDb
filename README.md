@@ -71,14 +71,15 @@ Contributing
 
 ### Screenshots
 - Snapshot of the EC2 Dashboard of all ec2 instances setup
-<img width="1511" alt="Screenshot 2023-11-30 at 2<img width="916" alt="Screenshot 2023-11-29 at 4 02 05 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/50738386-2d37-45f5-a282-5b3239f32894">
- 07 27 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/9e5b5f09-c29d-47d8-b267-85d35766774b">
+<img width="1511" alt="Screenshot 2023-11-30 at 2 07 27 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/2783c235-4189-422b-ad16-1c973e9a82a6">
+
 
 - Snapshot of the setting up ec2 server for bigchaindb
 <img width="918" alt="Screenshot 2023-11-29 at 6 29 39 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/a1de75ee-114c-4b4c-97e1-68f9a50654dc">
 
 - Snapshot of the setting up ec2 server for bigchaindb
-![Uploading Screenshot 2023-11-29 at 4.02.05 PM.png…]()
+<img width="916" alt="Screenshot 2023-11-29 at 4 02 05 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/15266763-aec5-4cad-8201-c6db45f3bbd5">
+
 
 
 
