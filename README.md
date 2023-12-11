@@ -50,7 +50,7 @@ $ python sendSAS.py
 ```
 
 
-This are the transactions used in the next examples.
+
 
 
 # Spectrum Access System (SAS) Server
