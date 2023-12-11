@@ -69,6 +69,14 @@ Future Experiments
 - With seven servers, we expect a similar latency trend, albeit with larger values. At a fixed input rate of 30 TPM, latency with seven servers is expected to be higher than with four, still following a linear relationship with the polling interval. However, for an input rate of 90 TPM, latency may exceed the designated interval. This future experiment will provide a comprehensive assessment of the system's performance.
 Contributing
 
+### Screenshots
+- Snapshot of the EC2 Dashboard of all ec2 instances setup
+<img width="1511" alt="Screenshot 2023-11-30 at 2 07 27 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/9e5b5f09-c29d-47d8-b267-85d35766774b">
+
+- Snapshot of the setting up ec2 server for bigchaindb
+<img width="918" alt="Screenshot 2023-11-29 at 6 29 39 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/a1de75ee-114c-4b4c-97e1-68f9a50654dc">
+
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 License
 
