@@ -53,21 +53,25 @@ The main class in this project is SAS_Server. It has two main methods: receive_r
 ### EC2 Cloud Setup for  Prototype
 
 - This project implements a prototype of  on the Amazon AWS cloud computing platform.
-System Setup
+
+# System Setup
 
 - Our system setup includes {4} EC2 instances in Ohio, N Virginia, N California and Oregon region serving as SAS servers, with a single desktop in our lab acting as the spectrum user. Each server instance is configured as an EC2 T2.Large node, featuring two vCPUs, 8GB of memory, and a 32GB disk. These server instances are distributed across four different geographical regions in the U.S., reflecting the real-world deployment of SAS servers.
-Network Simulation
 
-- To simulate network conditions, we assess network latency between the lab desktop and the cloud servers. We have chosen BigchainDB as the blockchain database, with each server hosting a BigchainDB implementation forming a network. We employ the Python driver of BigchainDB to implement the coordination mechanism. BigchainDB offers two transaction templates: create for registration transactions and transfer for other transactions. Transaction details are included in the asset and metadata fields of these templates. The underlying consensus protocol used by BigchainDB is Tendermint.
-Performance Evaluation
+# Network Simulation
+
+- To simulate network conditions, we assessed network latency between the lab desktop and the cloud servers. We have chosen BigchainDB as the blockchain database, with each server hosting a BigchainDB implementation forming a network. We employ the Python driver of BigchainDB to implement the coordination mechanism. BigchainDB offers two transaction templates: create for registration transactions and transfer for other transactions. Transaction details are included in the asset and metadata fields of these templates. The underlying consensus protocol used by BigchainDB is Tendermint.
+
+# Performance Evaluation
 
 - Our performance evaluation focuses on throughput and latency under specific traffic volume conditions. We anticipate approximately 400 CBSDs within a typical spectrum sharing zone, each capable of sending requests within a 300-second heartbeat interval. This results in an input rate of 80 transactions per minute (TPM). In real scenarios, we expect around 10 TPM. Stress tests are conducted at various input rates, including {30, 60, 90, 120, 150, 180} TPM, with each request specifying desired spectrum bands and locations. The decision finalization intervals vary within the range {30, 60, 90, 120} seconds while maintaining a fixed input rate.
-Future Experiments
 
-- In future experiments, we will assess the decision finalization phase, with a focus on latency. For four servers, we will evaluate the system's performance under maximum (90 TPM) and normal (30 TPM) input rates. As the input rate increases, processing latency is expected to rise due to additional processing time for transaction commitments and allocation generation. Latency is also anticipated to increase linearly with the polling interval but should remain smaller than the designated interval n.
 
-- With seven servers, we expect a similar latency trend, albeit with larger values. At a fixed input rate of 30 TPM, latency with seven servers is expected to be higher than with four, still following a linear relationship with the polling interval. However, for an input rate of 90 TPM, latency may exceed the designated interval. This future experiment will provide a comprehensive assessment of the system's performance.
-Contributing
+-  we  assessed the decision finalization phase, with a focus on latency. For four servers, we evaluated the system's performance under maximum (90 TPM) and normal (30 TPM) input rates. As the input rate increased, processing latency  rise due to additional processing time for transaction commitments and allocation generation. Latency also  increases linearly with the polling interval but  remained smaller than the designated interval n.
+
+- With seven servers, we got a similar latency trend, albeit with larger values. At a fixed input rate of 30 TPM, latency with seven servers is os to be higher than with four, still following a linear relationship with the polling interval. However, for an input rate of 90 TPM, latency exceed the designated interval. 
+
+
 
 ### Screenshots
 - Snapshot of the EC2 Dashboard of all ec2 instances setup
