@@ -53,7 +53,7 @@ $ python sendSAS.py
 This are the transactions used in the next examples.
 
 
-### Spectrum Access System (SAS) Server
+# Spectrum Access System (SAS) Server
 
 This repository contains the implementation of a Spectrum Access System (SAS) server using BigchainDB, a blockchain database.
 Description
@@ -71,7 +71,7 @@ The main class in this project is SAS_Server. It has two main methods: receive_r
 
 - send_transactions(): This method sends all the transactions in the input set to the BigchainDB blockchain database.
 
-### EC2 Cloud Setup for  Prototype
+# EC2 Cloud Setup for  Prototype
 
 - This project implements a prototype of  on the Amazon AWS cloud computing platform.
 
@@ -94,7 +94,7 @@ The main class in this project is SAS_Server. It has two main methods: receive_r
 
 
 
-### Screenshots
+# Screenshots
 - Snapshot of the EC2 Dashboard of all ec2 instances setup
 <img width="1511" alt="Screenshot 2023-11-30 at 2 07 27 PM" src="https://github.com/sahilBhola98/SAS-BigchainDb/assets/23173443/2783c235-4189-422b-ad16-1c973e9a82a6">
 
