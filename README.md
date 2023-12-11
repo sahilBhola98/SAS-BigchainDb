@@ -1,6 +1,21 @@
 # BigchainDB
 
 This is an   api running on top of the BigchainDB python driver.
+This repository contains a prototype implementation of an Inter-SAS Allocation system using BigchainDB, a blockchain database. The system is designed to manage spectrum usage requests from devices, convert them into transactions, sign them with a private key, and send them to the BigchainDB blockchain database.
+
+# Description
+
+The system is composed of several Python scripts:
+
+- app.py: This is the main Flask application that sets up a GraphQL endpoint for querying the BigchainDB database.
+
+- prepopulate.py: This script generates a set of assets (representing spectrum bands at different locations) and transfers them to a recipient.
+
+- sendSAS.py: This script simulates a SAS server that receives spectrum usage requests from devices, converts them into transactions, and sends them to the BigchainDB blockchain database.
+
+- schema.py: This script defines the GraphQL schema for querying the BigchainDB database.
+
+The system also includes two JSON files (tx_create.json and tx_transfer.json) that represent example CREATE and TRANSFER transactions in BigchainDB.
 
 
 ### Note
@@ -28,6 +43,12 @@ $ python app.py
 ```bash
 $ python prepopulate.py
 ```
+
+6. To simulate a SAS server, run the following command:
+```bash
+$ python sendSAS.py
+```
+
 
 This are the transactions used in the next examples.
 
